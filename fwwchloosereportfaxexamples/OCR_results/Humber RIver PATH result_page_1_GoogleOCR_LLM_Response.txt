@@ -1,0 +1,30 @@
+Let's extract the required information from the provided text and format it into JSON.
+
+1. **Name**: The name is given as "TEST, VIEWPOINT" in one instance and "CASTIGLIONE, GIUSEPPE" in another. Since both names are mentioned, we should choose a consistent approach. Let's use "CASTIGLIONE, GIUSEPPE".
+
+2. **Date of Birth (DOB)**: The DOB is given as "07 OCT 1984". This can be converted to the YYYY-MM-DD format.
+
+3. **ID**: The ID appears in multiple places:
+   - Hospital Number: H001116069
+   - Account Number: ACOC8974/25
+
+We should choose one of these as the primary ID. Let's use "H001116069".
+
+4. **Address**: The address is given as "123 TEST ST, TORONTO ON T: 400-123-1234". We will combine this into a coherent format.
+
+5. **MRN (Medical Record Number)**: The MRN is provided as "500000007".
+
+6. **Category**: This appears to be a surgical pathology report, so the category would be "Pathology Report".
+
+Now let's construct the JSON output:
+
+```json
+{
+    "name": "CASTIGLIONE, GIUSEPPE",
+    "dob": "1984-10-07",
+    "id": "H001116069",
+    "address": "123 TEST ST, TORONTO ON T: 400-123-1234",
+    "mrn": "500000007",
+    "category": "Pathology Report"
+}
+```

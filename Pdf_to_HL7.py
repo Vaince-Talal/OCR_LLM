@@ -1,14 +1,14 @@
 import os
-
 import requests
 from pdf2image import convert_from_path
 from hl7apy.core import Message, Segment
 from gpt4all import GPT4All
 import easyocr  # Using EasyOCR as the OCR tool
-
+from google.cloud import vision
+import io
 
 # Function to convert PDF to image
-def pdf_to_image(pdf_path, output_folder="images", poppler_path=r"C:\poppler\Library\bin"):
+def pdf_to_image(pdf_path, output_folder="images", poppler_path=r"C:\\poppler\\Library\\bin"):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
@@ -22,50 +22,36 @@ def pdf_to_image(pdf_path, output_folder="images", poppler_path=r"C:\poppler\Lib
 
     return image_paths
 
-
 # Function to perform OCR on an image using EasyOCR
-def ocr_image_with_structure(image_path):
-    """
-    Perform OCR and attempt to maintain text structure using bounding boxes.
-    """
+def ocr_image_easyocr(image_path, output_file):
     reader = easyocr.Reader(["en"], gpu=True)
-    result = reader.readtext(image_path, detail=1)  # Get detailed results with bounding boxes
+    result = reader.readtext(image_path, detail=0)  # Get text only
 
-    structured_text = []
-    for detection in result:
-        bbox, text, confidence = detection
-        # Add bounding box coordinates or other structural markers if needed
-        structured_text.append({"bbox": bbox, "text": text, "confidence": confidence})
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(result))
 
-    # Sort by vertical (y-coordinate) position to maintain reading order
-    structured_text.sort(key=lambda x: x["bbox"][0][1])  # Sort by the top-left y-coordinate
+    return "\n".join(result)
 
-    # Join text lines while maintaining structure
-    result = "\n".join(item["text"] for item in structured_text)
-    print(result)
-    return result
+# Function to perform OCR on an image using Google Vision API
+def ocr_image_google(image_path, output_file):
+    client = vision.ImageAnnotatorClient()
 
+    with io.open(image_path, 'rb') as image_file:
+        content = image_file.read()
+    image = vision.Image(content=content)
 
+    response = client.text_detection(image=image)
+    texts = response.text_annotations
 
-# Function to extract patient information using LLM SDK
-# def extract_patient_info_with_llm(ocr_text):
-#     llm = GPT4All(model_name="qwen2.5-coder-7b-instruct-q4_0")
-#     prompt = f"Extract patient information from the following text: \n{ocr_text}\nPlease provide Name, Date of Birth, ID, and Address in JSON format. Date of Birth will usually be denoted by DOB in the docuemnet. ID is the MRN or can be potienally something else. "
-#     with llm.chat_session():
-#         response = llm.generate(prompt, max_tokens=1024)
-#     try:
-#         print(response)
-#         patient_info = eval(response)  # Assuming the LLM provides valid JSON-like output
-#     except Exception as e:
-#         print("Error parsing LLM response:", e)
-#         patient_info = {
-#             "Name": "Unknown",
-#             "DOB": "Unknown",
-#             "ID": "Unknown",
-#             "Address": "Unknown"
-#         }
-#     return patient_info
-def extract_patient_info_with_api(ocr_text):
+    extracted_text = "\n".join([text.description for text in texts])
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(extracted_text)
+
+    return extracted_text
+
+# Function to extract patient information using GPT4All and save the response
+def extract_patient_info_with_api(ocr_text, output_file):
     url = "http://localhost:4891/v1/chat/completions"  # GPT4All server endpoint
     payload = {
         "model": "Reasoner v1",
@@ -86,102 +72,70 @@ def extract_patient_info_with_api(ocr_text):
                     '    "name": "string",\n'
                     '    "dob": "string in YYYY-MM-DD",\n'
                     '    "id": "string",\n'
-                    '    "address": "string" - should be in #num street, city, province,\n'
+                    '    "address": "string",\n'
                     '    "mrn": "string (numbers only)",\n'
-                    '    "category": "string"'                                
+                    '    "category": "string"'
                     "}\n\n"
                     "If any information is missing or cannot be reasonably inferred, return 'Unknown' for that field. "
                     "Make reasonable assumptions for messy data, and ensure DOB reflects context (e.g., adjust based on age if provided)."
                 )
             }
         ],
-        "max_tokens": 512,  # Adjust as needed for expected response size
-        "temperature": 0.4  # Consistent results with slight variability for inferences
+        "max_tokens": 512,
+        "temperature": 0.4
     }
 
     try:
         response = requests.post(url, json=payload)
         if response.status_code == 200:
             result = response.json()
-            # Extract the assistant's response
             content = result['choices'][0]['message']['content']
-            print(content)
-            return eval(content)  # Convert the response into a dictionary
+            with open(output_file, "w", encoding="utf-8") as f:
+                f.write(content)
+            return eval(content)
         else:
             print(f"Error from GPT4All server: {response.status_code}")
             print(response.text)
     except Exception as e:
         print("Error connecting to GPT4All server:", e)
 
-    # Return a default response if something goes wrong
     return {
         "name": "Unknown",
         "dob": "Unknown",
         "id": "Unknown",
-        "address": "Unknown"
+        "address": "Unknown",
+        "mrn": "Unknown",
+        "category": "Unknown"
     }
-
-# Function to generate an HL7 message
-def generate_hl7_message(patient_info):
-    msg = Message("ADT_A01")
-
-    # Populate the MSH segment
-    msg.msh.msh_1 = "|"
-    msg.msh.msh_2 = "^~\&"
-    msg.msh.msh_3 = "SendingApplication"
-    msg.msh.msh_4 = "SendingFacility"
-    msg.msh.msh_5 = "ReceivingApplication"
-    msg.msh.msh_6 = "ReceivingFacility"
-    msg.msh.msh_7 = "20241227120000"
-    msg.msh.msh_9 = "ADT^A01"
-    msg.msh.msh_10 = "12345"
-    msg.msh.msh_11 = "P"
-
-    # Populate the PID segment
-    try:
-        pid = Segment("PID")
-        pid.pid_3 = patient_info['ID']
-        pid.pid_5 = patient_info['Name']
-        pid.pid_7 = patient_info['Date of Birth']
-        pid.pid_11 = patient_info['Address']
-        msg.add(pid)
-    except:
-        print("Something went wrong in translation")
-
-
-    return msg.to_er7()
-
 
 # Main script
 def main(directory_path):
-    # Step 1: Process all PDFs in the given directory
     pdf_files = [f for f in os.listdir(directory_path) if f.lower().endswith('.pdf')]
+    output_folder = os.path.join(directory_path, "OCR_results")
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
     for pdf_file in pdf_files:
         pdf_path = os.path.join(directory_path, pdf_file)
         print(f"Processing: {pdf_path}")
 
-        # Convert PDF to images
         images = pdf_to_image(pdf_path)
 
-        # Step 2: Perform OCR and extract patient info
-        all_patient_info = []
-        for image_path in images:
-            ocr_text = ocr_image_with_structure(image_path)
-            patient_info = extract_patient_info_with_api(ocr_text)
-            all_patient_info.append(patient_info)
+        for idx, image_path in enumerate(images):
+            easyocr_output_file = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}_page_{idx + 1}_OCR_EasyOCR.txt")
+            googleocr_output_file = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}_page_{idx + 1}_OCR_Google.txt")
+            easyocr_llm_response_file = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}_page_{idx + 1}_EasyOCR_LLM_Response.txt")
+            googleocr_llm_response_file = os.path.join(output_folder, f"{os.path.splitext(pdf_file)[0]}_page_{idx + 1}_GoogleOCR_LLM_Response.txt")
 
-        # Step 3: Generate HL7 messages
-        hl7_messages = []
-        for patient_info in all_patient_info:
-            hl7_message = generate_hl7_message(patient_info)
-            hl7_messages.append(hl7_message)
+            easyocr_text = ocr_image_easyocr(image_path, easyocr_output_file)
+            google_ocr_text = ocr_image_google(image_path, googleocr_output_file)
 
-        # Print or save HL7 messages
-        for idx, hl7_message in enumerate(hl7_messages):
-            print(f"\nHL7 Message for {pdf_file} - Page {idx + 1}:")
-            print(hl7_message)
+            extract_patient_info_with_api(easyocr_text, easyocr_llm_response_file)
+            extract_patient_info_with_api(google_ocr_text, googleocr_llm_response_file)
 
+            print(f"Patient Info for {pdf_file} - Page {idx + 1} saved.")
 
 if __name__ == "__main__":
-    directory_path = r"C:\Users\talal\PycharmProjects\OCR_LLM\fwwchloosereportfaxexamples"  # Replace with your directory path containing PDFs
+    directory_path = r"C:\Users\talal\PycharmProjects\OCR_LLM\fwwchloosereportfaxexamples"
     main(directory_path)

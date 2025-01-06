@@ -1,0 +1,144 @@
+Sinai
+Mount Sinai Hospital
+Health
+Joseph & Well Labovic Health Complex
+Clinic ID:
+ENDO
+Clinic Name:
+ENDOSCOPY
+Physician:
+Pathology & Laboratory Medicine
+500 University Ave, Suite 6-500, Toronto, ON, Canada, M5G 1X5
+t: 416-585-4800x4457 416-586-8628
+Medical Record # 8066203
+Last Name:
+TESTINGLONGNAME
+BOLLEGALA, DR. NATASHA
+First, Middle:
+MARYLOUWCH
+Procedure Date: 2024-05-31
+DOB/Gender: 28 NOV 1981
+Accession Date: 2024-05-31
+Report Date:
+2024-07-12*
+Health Card #:
+Visit#:
+7218 202510
+SUPPLEMENTAL SURGICAL PATHOLOGY REPORT
+SPS-24-15414
+Aaron Pollett, MD, FRCPC
+MRN 500000005
+TESTINGLONGNAME.
+Page 3 of 3
+Sinai
+Mount
+Sinai
+Hospital
+Health
+Joseph
+&
+Well
+Labovic
+Health
+Complex
+Clinic
+ID
+:
+ENDO
+Clinic
+Name
+:
+ENDOSCOPY
+Physician
+:
+Pathology
+&
+Laboratory
+Medicine
+500
+University
+Ave
+,
+Suite
+6-500
+,
+Toronto
+,
+ON
+,
+Canada
+,
+M5G
+1X5
+t
+:
+416-585-4800x4457
+416-586-8628
+Medical
+Record
+#
+8066203
+Last
+Name
+:
+TESTINGLONGNAME
+BOLLEGALA
+,
+DR
+.
+NATASHA
+First
+,
+Middle
+:
+MARYLOUWCH
+Procedure
+Date
+:
+2024-05-31
+DOB
+/
+Gender
+:
+28
+NOV
+1981
+Accession
+Date
+:
+2024-05-31
+Report
+Date
+:
+2024-07-12
+*
+Health
+Card
+#
+:
+Visit
+#
+:
+7218
+202510
+SUPPLEMENTAL
+SURGICAL
+PATHOLOGY
+REPORT
+SPS
+-
+24-15414
+Aaron
+Pollett
+,
+MD
+,
+FRCPC
+MRN
+500000005
+TESTINGLONGNAME
+.
+Page
+3
+of
+3
