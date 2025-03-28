@@ -1,8 +1,0 @@
-{
-    "name": "Stephanie",
-    "dob": "1998-03-24",
-    "id": "6549846321",
-    "address": "123 WATERDOWN ST, TORONTO, ON L&J 5G6 F 26 Y",
-    "mrn": "6031427",
-    "category": "Customer Service Report"
-}

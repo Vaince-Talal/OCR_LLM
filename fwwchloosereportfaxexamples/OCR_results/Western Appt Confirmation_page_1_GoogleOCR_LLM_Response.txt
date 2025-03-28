@@ -1,8 +1,0 @@
-{
-    "name": "TEST, STEPHANIE",
-    "dob": "1998-03-26",  // Date of Birth is clearly stated
-    "id": "Unknown",        // ID number not provided in the text
-    "address": "Unknown",   // Address information not available
-    "mrn": "6549846321",    // MRN appears to be numeric, no need for correction
-    "category": "Fax"
-}

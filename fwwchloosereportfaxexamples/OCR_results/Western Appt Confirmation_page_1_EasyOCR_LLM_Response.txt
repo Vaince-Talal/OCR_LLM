@@ -1,8 +1,0 @@
-{
-    "name": "TEST, STEPHANIE",
-    "dob": "1996-03-26",
-    "id": "6549846321",
-    "address": "Unknown",
-    "mrn": "6549846121",
-    "category": "Medical Referral"
-}

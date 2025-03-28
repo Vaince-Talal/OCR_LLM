@@ -1,6 +1,8 @@
 import pytesseract
 from pytesseract import Output
-from BaseOCR import BaseOCR
+
+from OCR_Models.BaseOCR import BaseOCR
+
 
 class TesseractOCR(BaseOCR):
     def __init__(self, language="eng", gpu=False, poppler_path=r"C:\\poppler\\Library\\bin"):

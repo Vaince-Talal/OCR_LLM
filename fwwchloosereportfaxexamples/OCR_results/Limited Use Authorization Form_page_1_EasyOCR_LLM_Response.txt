@@ -1,8 +1,0 @@
-{
-    "name": "Stephanie DXATESTING",
-    "dob": "1939-03-21",
-    "id": "47/1872024",
-    "address": "76 Greenville St. LEVEL 3, TORONTO; 418-700 SUMMERIDGE MARKHAM",
-    "mrn": "Unknown",
-    "category": "Authorization Request"
-}

@@ -1,8 +1,0 @@
-{
-    "name": "Leith, Eric Stephen",
-    "dob": "1984-10-07",
-    "id": "Unknown",
-    "address": "2075 Bayview Avenue, Sunnybrook, Toronto ON T; 400-123-1234",
-    "mrn": "MNBM5",
-    "category": "Acknowledgement of Referral"
-}
