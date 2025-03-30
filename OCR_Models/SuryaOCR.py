@@ -39,7 +39,7 @@ class SuryaOCR(BaseOCR):
                 for line in result.text_lines:
                     detailed_results.append({
                         "text": line.text,
-                        "confidence": line.confidence
+                        "confidence": line.confidence * 100
                     })
 
         return detailed_results

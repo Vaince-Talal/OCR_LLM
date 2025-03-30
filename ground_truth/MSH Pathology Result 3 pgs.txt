@@ -1,0 +1,1162 @@
+Sinai
+Mount Sinai Hospital
+Health Spa WairLebovic Hearth Comple
+Pathology
+800 University Ave
+MRN. 500000005
+HCN:
+TESTING LONGNAME, MARY LOUWCH
+SEX: F DOB: 28 NOV 1981
+123 COLLEGE ST
+TORONTO ON M5M 2P1 T: 416-888-1111
+DEPT: WICH Surgery
+PROV: IMPATIENT, ATTENDING PHYSICIAN CSN:65115
+416-586-4800x4
+Clinic ID:
+ENDO
+Medical Record # 8066203:
+Clinic Name:
+ENDOSCOPY
+Last Name:
+TESTINGLONGNAME
+Physician
+BOLLEGALA, DR. NATASHA
+Procedure Date: 2024-05-31
+First, Middle:
+DOB/Gender:
+MARYLOUWCH
+28 NOV 1981
+Accession Date: 2024-05-31
+Health Card #:
+Report Date:
+2024-07-12"
+Visit #: 7218 202510
+SUPPLEMENTAL SURGICAL PATHOLOGY REPORT
+Coples to:
+SUPPLEMENTAL INFORMATION:
+ADDENDUM (June 6th, 2024):
+Immunohistochemistry:
+Mismatch Repair (MMR): MLH1 deficient (abnormal MLH1 / PMS2 staining dMMR)
+Tumour considered MSI-H
+PD-L1: Positive (CPS >5 (40)
+HER2 Negative (0)
+ADDENDUM (July 12, 2024).
+Molecular Analysis:
+declines
+investigation / treatment
+send to
+PCP
+MLH1 Promoter Methylation: PRESENT
+COMMENT
+FAXE
+Given the molecular findings, the loss of MLH1 is most likely sporadic in nature. Unless there is a suggestion for a
+hereditary condition (i.e. compelling family history, diagnosis under age 50, polyposis), then a referral to genetics is
+not indicated at this time.
+JUL 23 2024
+Molecular Testing-Technical Details
+DNA extracted from microdissected tumour tissue was treated with sodium bisulfite, followed by amplification of a
+segment of the MLH1 [NM_000249 3] promoter region (0-248--178) using methylation specific real-time PCR on the
+Roche LightCycler 96 The methylation status of MLH1 is determined by calculating the percentage of methylated
+reference (PMR) by comparing the amplification of MLH1 to the amplification of the reference gene Alu. Methylation
+at locations other than those covered by the primers and probes will not be detected. Results of this test must always
+be interpreted within the clinical context and other relevant data, and should not be used alone for a diagnosis of
+malignancy. This test is not intended to detect minimal residual disease.
+These tests were developed and their performance characteristics determined by Mount Sinai Hospital, Department
+of Pathology and Laboratory Medicine. This laboratory is accredited to ISO 15189 Plus by Accreditation Canada
+Diagnostics. These tests were validated according to accepted practice guidelines for clinical molecular genetic
+testing by the ACMG and CCMG.
+PATHOLOGY DIAGNOSIS
+1.2. Duodenum (D2, cap), biopsies:
+- Mild intraepithelial lymphocytosis (likely secondary to Helicobacter pylori gastritis)
+3. Stomach (antrum and body), biopsy:
+- Active chronic gastritis; Helicobacter pylori identified with histochemical stains (H. pylori gastritis)
+- Intestinal metaplasia; negative for dysplasia
+4. Stomach (mass), biopsy:
+. Moderately differentiated gastric adenocarcinoma (intestinal type)
+- Immunohistochemical biomarkers pending
+MRN 500000005
+Last Nam
+TESTINGLONGNAME
+Page 1 of 3
+Sinai
+Mount
+Sinai
+Hospital
+Health
+Spa
+WairLebovic
+Hearth
+Comple
+Pathology
+800
+University
+Ave
+MRN
+.
+500000005
+HCN
+:
+TESTING
+LONGNAME
+,
+MARY
+LOUWCH
+SEX
+:
+F
+DOB
+:
+28
+NOV
+1981
+123
+COLLEGE
+ST
+TORONTO
+ON
+M5M
+2P1
+T
+:
+416-888-1111
+DEPT
+:
+WICH
+Surgery
+PROV
+:
+IMPATIENT
+,
+ATTENDING
+PHYSICIAN
+CSN
+:
+65115
+416-586-4800x4
+Clinic
+ID
+:
+ENDO
+Medical
+Record
+#
+8066203
+:
+Clinic
+Name
+:
+ENDOSCOPY
+Last
+Name
+:
+TESTINGLONGNAME
+Physician
+BOLLEGALA
+,
+DR
+.
+NATASHA
+Procedure
+Date
+:
+2024-05-31
+First
+,
+Middle
+:
+DOB
+/
+Gender
+:
+MARYLOUWCH
+28
+NOV
+1981
+Accession
+Date
+:
+2024-05-31
+Health
+Card
+#
+:
+Report
+Date
+:
+2024-07-12
+"
+Visit
+#
+:
+7218
+202510
+SUPPLEMENTAL
+SURGICAL
+PATHOLOGY
+REPORT
+Coples
+to
+:
+SUPPLEMENTAL
+INFORMATION
+:
+ADDENDUM
+(
+June
+6th
+,
+2024
+)
+:
+Immunohistochemistry
+:
+Mismatch
+Repair
+(
+MMR
+)
+:
+MLH1
+deficient
+(
+abnormal
+MLH1
+/
+PMS2
+staining
+dMMR
+)
+Tumour
+considered
+MSI
+-
+H
+PD
+-
+L1
+:
+Positive
+(
+CPS
+>
+5
+(
+40
+)
+HER2
+Negative
+(
+0
+)
+ADDENDUM
+(
+July
+12
+,
+2024
+)
+.
+Molecular
+Analysis
+:
+declines
+investigation
+/
+treatment
+send
+to
+PCP
+MLH1
+Promoter
+Methylation
+:
+PRESENT
+COMMENT
+FAXE
+Given
+the
+molecular
+findings
+,
+the
+loss
+of
+MLH1
+is
+most
+likely
+sporadic
+in
+nature
+.
+Unless
+there
+is
+a
+suggestion
+for
+a
+hereditary
+condition
+(
+i.e.
+compelling
+family
+history
+,
+diagnosis
+under
+age
+50
+,
+polyposis
+)
+,
+then
+a
+referral
+to
+genetics
+is
+not
+indicated
+at
+this
+time
+.
+JUL
+23
+2024
+Molecular
+Testing
+-
+Technical
+Details
+DNA
+extracted
+from
+microdissected
+tumour
+tissue
+was
+treated
+with
+sodium
+bisulfite
+,
+followed
+by
+amplification
+of
+a
+segment
+of
+the
+MLH1
+[
+NM_000249
+3
+]
+promoter
+region
+(
+0-248--178
+)
+using
+methylation
+specific
+real
+-
+time
+PCR
+on
+the
+Roche
+LightCycler
+96
+The
+methylation
+status
+of
+MLH1
+is
+determined
+by
+calculating
+the
+percentage
+of
+methylated
+reference
+(
+PMR
+)
+by
+comparing
+the
+amplification
+of
+MLH1
+to
+the
+amplification
+of
+the
+reference
+gene
+Alu
+.
+Methylation
+at
+locations
+other
+than
+those
+covered
+by
+the
+primers
+and
+probes
+will
+not
+be
+detected
+.
+Results
+of
+this
+test
+must
+always
+be
+interpreted
+within
+the
+clinical
+context
+and
+other
+relevant
+data
+,
+and
+should
+not
+be
+used
+alone
+for
+a
+diagnosis
+of
+malignancy
+.
+This
+test
+is
+not
+intended
+to
+detect
+minimal
+residual
+disease
+.
+These
+tests
+were
+developed
+and
+their
+performance
+characteristics
+determined
+by
+Mount
+Sinai
+Hospital
+,
+Department
+of
+Pathology
+and
+Laboratory
+Medicine
+.
+This
+laboratory
+is
+accredited
+to
+ISO
+15189
+Plus
+by
+Accreditation
+Canada
+Diagnostics
+.
+These
+tests
+were
+validated
+according
+to
+accepted
+practice
+guidelines
+for
+clinical
+molecular
+genetic
+testing
+by
+the
+ACMG
+and
+CCMG
+.
+PATHOLOGY
+DIAGNOSIS
+1.2
+.
+Duodenum
+(
+D2
+,
+cap
+)
+,
+biopsies
+:
+-
+Mild
+intraepithelial
+lymphocytosis
+(
+likely
+secondary
+to
+Helicobacter
+pylori
+gastritis
+)
+3.
+Stomach
+(
+antrum
+and
+body
+)
+,
+biopsy
+:
+-
+Active
+chronic
+gastritis
+;
+Helicobacter
+pylori
+identified
+with
+histochemical
+stains
+(
+H.
+pylori
+gastritis
+)
+-
+Intestinal
+metaplasia
+;
+negative
+for
+dysplasia
+4.
+Stomach
+(
+mass
+)
+,
+biopsy
+:
+.
+Moderately
+differentiated
+gastric
+adenocarcinoma
+(
+intestinal
+type
+)
+-
+Immunohistochemical
+biomarkers
+pending
+MRN
+500000005
+Last
+Nam
+TESTINGLONGNAME
+Page
+1
+of
+3
+
+ENDOSCOPY
+Sinai
+Health
+Joseph
+Mount Sinai Hospital
+sh & Woll Lebovic Health Complex
+Clinic ID:
+ENDO
+Clinic Name:
+Physician
+Procedure Date: 2024-05-31
+Accession Date: 2024-05-31
+Report Date:
+2024-07-12"
+BOLLEGALA, DR. NATASHA
+Pathology & Laboratory Medicine
+500 University Ave, Suite 6-500 Toronto, ON, Canada, M5G 1X5
+t: 416-586-4800x4457 : 416-586-8628
+Medical Record # 8006203
+Last Name: TESTINGLONGNAME
+MARYLOUWCH
+First, Middle:
+DOB/Gender:
+28 NOV 1981
+Health Card #:
+Visit #:
+7218 202510
+SUPPLEMENTAL SURGICAL PATHOLOGY REPORT
+COMMENT:
+Biomarker results will be reported in a supplemental report
+Specimen: 1. DUODENUM BIOPSY
+2. DUODENUM BIOPSY, CAP
+3. GASTRIC ANTRUM BIOPSY, AND BODY
+4. GASTRIC BIOPSY, MASS
+Gross Description
+SPS-24-15414
+1. The specimen container is labelled with the patient's identification and contains 3 pieces of tan soft tissue
+measuring 0.2 to 0.4 cm in greatest dimension.
+-1
+submitted in toto
+2. The specimen container is labelled with the patient's identification and contains 4 pieces of tan soft tissue
+measuring 0.6 to 0.7 cm in greatest dimension.
+-1
+submitted in toto
+3. The specimen container is labelled with the patient's identification and contains 4 pieces of tan soft tissue
+measuring 0.2 to 0.6 cm in greatest dimension.
+-1
+submitted in toto
+4. The specimen container is labelled with the patient's identification and contains multiple fragments of tan soft
+tissue measuring 0.8 x 0.6 x 0.2 cm in aggregate dimension.
+-1
+submitted in toto
+Grossed by: N. Saito, Pathologists' Assistant
+Microscopic Description
+RESULTS
+Mismatch Repair
+Immunohistochemistry (IHC) Testing for Mismatch Repair (MMR) Proteins
+MLH1 Result: Loss of nuclear expression
+MSH2 Result: Intact nuclear expression
+MSH6 Result: Intact nuclear expression
+PMS2 Result: Loss of nuclear expression
+Background nonneoplastic tissue/internal control with intact nuclear expression
+HER2 Test(s) Performed HER2 by IHC Results Negative (Score 0)
+MEN SUUQGOODS
+TESTINGLONGNAME
+Page 2 of 3
+ENDOSCOPY
+Sinai
+Health
+Joseph
+Mount
+Sinai
+Hospital
+sh
+&
+Woll
+Lebovic
+Health
+Complex
+Clinic
+ID
+:
+ENDO
+Clinic
+Name
+:
+Physician
+Procedure
+Date
+:
+2024-05-31
+Accession
+Date
+:
+2024-05-31
+Report
+Date
+:
+2024-07-12
+"
+BOLLEGALA
+,
+DR
+.
+NATASHA
+Pathology
+&
+Laboratory
+Medicine
+500
+University
+Ave
+,
+Suite
+6-500
+Toronto
+,
+ON
+,
+Canada
+,
+M5G
+1X5
+t
+:
+416-586-4800x4457
+:
+416-586-8628
+Medical
+Record
+#
+8006203
+Last
+Name
+:
+TESTINGLONGNAME
+MARYLOUWCH
+First
+,
+Middle
+:
+DOB
+/
+Gender
+:
+28
+NOV
+1981
+Health
+Card
+#
+:
+Visit
+#
+:
+7218
+202510
+SUPPLEMENTAL
+SURGICAL
+PATHOLOGY
+REPORT
+COMMENT
+:
+Biomarker
+results
+will
+be
+reported
+in
+a
+supplemental
+report
+Specimen
+:
+1.
+DUODENUM
+BIOPSY
+2.
+DUODENUM
+BIOPSY
+,
+CAP
+3.
+GASTRIC
+ANTRUM
+BIOPSY
+,
+AND
+BODY
+4.
+GASTRIC
+BIOPSY
+,
+MASS
+Gross
+Description
+SPS
+-
+24-15414
+1.
+The
+specimen
+container
+is
+labelled
+with
+the
+patient's
+identification
+and
+contains
+3
+pieces
+of
+tan
+soft
+tissue
+measuring
+0.2
+to
+0.4
+cm
+in
+greatest
+dimension
+.
+-1
+submitted
+in
+toto
+2.
+The
+specimen
+container
+is
+labelled
+with
+the
+patient's
+identification
+and
+contains
+4
+pieces
+of
+tan
+soft
+tissue
+measuring
+0.6
+to
+0.7
+cm
+in
+greatest
+dimension
+.
+-1
+submitted
+in
+toto
+3.
+The
+specimen
+container
+is
+labelled
+with
+the
+patient's
+identification
+and
+contains
+4
+pieces
+of
+tan
+soft
+tissue
+measuring
+0.2
+to
+0.6
+cm
+in
+greatest
+dimension
+.
+-1
+submitted
+in
+toto
+4.
+The
+specimen
+container
+is
+labelled
+with
+the
+patient's
+identification
+and
+contains
+multiple
+fragments
+of
+tan
+soft
+tissue
+measuring
+0.8
+x
+0.6
+x
+0.2
+cm
+in
+aggregate
+dimension
+.
+-1
+submitted
+in
+toto
+Grossed
+by
+:
+N.
+Saito
+,
+Pathologists
+'
+Assistant
+Microscopic
+Description
+RESULTS
+Mismatch
+Repair
+Immunohistochemistry
+(
+IHC
+)
+Testing
+for
+Mismatch
+Repair
+(
+MMR
+)
+Proteins
+MLH1
+Result
+:
+Loss
+of
+nuclear
+expression
+MSH2
+Result
+:
+Intact
+nuclear
+expression
+MSH6
+Result
+:
+Intact
+nuclear
+expression
+PMS2
+Result
+:
+Loss
+of
+nuclear
+expression
+Background
+nonneoplastic
+tissue
+/
+internal
+control
+with
+intact
+nuclear
+expression
+HER2
+Test
+(
+s
+)
+Performed
+HER2
+by
+IHC
+Results
+Negative
+(
+Score
+0
+)
+MEN
+SUUQGOODS
+TESTINGLONGNAME
+Page
+2
+of
+3
+
+Sinai
+Health
+Clinic ID:
+ENDO
+Clinic Name:
+ENDOSCOPY
+Physician:
+Mount Sinai Hospital
+Joseph & Well Labovic Health Complex
+Pathology & Laboratory Medicine
+500 University Ave, Suite 6-500, Toronto, ON, Canada, M5G 1X5
+t: 416-585-4800x4457 416-586-8628
+Medical Record # 8066203
+Last Name:
+TESTINGLONGNAME
+BOLLEGALA, DR. NATASHA
+First, Middle:
+MARYLOUWCH
+Procedure Date: 2024-05-31
+DOB/Gender: 28 NOV 1981
+Accession Date: 2024-05-31
+Report Date:
+2024-07-12*
+Health Card #:
+Visit#:
+7218 202510
+SUPPLEMENTAL SURGICAL PATHOLOGY REPORT
+SPS-24-15414
+Aaron Pollett, MD, FRCPC
+MRN 500000005
+TESTINGLONGNAME.
+Page 3 of 3
+Sinai
+Health
+Clinic
+ID
+:
+ENDO
+Clinic
+Name
+:
+ENDOSCOPY
+Physician
+:
+Mount
+Sinai
+Hospital
+Joseph
+&
+Well
+Labovic
+Health
+Complex
+Pathology
+&
+Laboratory
+Medicine
+500
+University
+Ave
+,
+Suite
+6-500
+,
+Toronto
+,
+ON
+,
+Canada
+,
+M5G
+1X5
+t
+:
+416-585-4800x4457
+416-586-8628
+Medical
+Record
+#
+8066203
+Last
+Name
+:
+TESTINGLONGNAME
+BOLLEGALA
+,
+DR
+.
+NATASHA
+First
+,
+Middle
+:
+MARYLOUWCH
+Procedure
+Date
+:
+2024-05-31
+DOB
+/
+Gender
+:
+28
+NOV
+1981
+Accession
+Date
+:
+2024-05-31
+Report
+Date
+:
+2024-07-12
+*
+Health
+Card
+#
+:
+Visit
+#
+:
+7218
+202510
+SUPPLEMENTAL
+SURGICAL
+PATHOLOGY
+REPORT
+SPS
+-
+24-15414
+Aaron
+Pollett
+,
+MD
+,
+FRCPC
+MRN
+500000005
+TESTINGLONGNAME
+.
+Page
+3
+of
+3

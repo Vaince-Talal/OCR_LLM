@@ -1,6 +1,7 @@
 import os
 import time
 from OCR_Models.BaseOCR import BaseOCR
+from OCR_Models.DocTROCR import DocTROCR
 from OCR_Models.SuryaOCR import SuryaOCR
 from OCR_Models.TesseractOCRTool import TesseractOCR
 
@@ -13,8 +14,9 @@ if not os.path.exists(output_folder):
 
 # Instantiate your OCR models
 ocr_models = {
-    'TesseractOCR': TesseractOCR(language="eng"),
-    'SuryaOCR': SuryaOCR(language="en")
+    #' TesseractOCR': TesseractOCR(language="eng"),
+    #'SuryaOCR': SuryaOCR(language="en"),
+    'DocTROCR': DocTROCR(language="en")
 }
 
 summary_file = os.path.join(output_folder, "OCR_summary.txt")
@@ -32,7 +34,7 @@ with open(summary_file, "w", encoding="utf-8") as summary:
                 text_output = model_instance.ocr_image(file_path)
                 conf_output = model_instance.ocr_image_with_conf(file_path)
                 elapsed_time = time.time()
-                end_time = start_time - elapsed_time
+                end_time = elapsed_time - start_time
 
                 base_filename = os.path.splitext(file)[0]
 

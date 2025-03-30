@@ -1,0 +1,15 @@
+Filename,Model,Processing Time (seconds),Average Confidence
+abbive CARE Enrollment confirmation.pdf,DocTROCR,0.41,0.00
+AJOVY Appt Reminder.pdf,DocTROCR,0.46,0.00
+Dermatology DLQ1.pdf,DocTROCR,0.48,0.00
+Dynacare Histolgy Report.pdf,DocTROCR,0.44,0.00
+Dynacare Lab Result_001.pdf,DocTROCR,0.43,0.00
+Humber RIver PATH result.pdf,DocTROCR,0.39,0.00
+Limited Use Authorization Form.pdf,DocTROCR,0.49,0.00
+MSH Pathology Result 3 pgs.pdf,DocTROCR,1.06,0.00
+Pfizer FLEX appt reminder.pdf,DocTROCR,0.36,0.00
+Private Office Appt Confirmation.pdf,DocTROCR,0.34,0.00
+Sunnybrook Referral confirmation.pdf,DocTROCR,0.36,0.00
+UHN Referral Form.pdf,DocTROCR,0.48,0.00
+Western Appt Confirmation.pdf,DocTROCR,0.36,0.00
+Ypeti TODAY Approval form.pdf,DocTROCR,0.38,0.00

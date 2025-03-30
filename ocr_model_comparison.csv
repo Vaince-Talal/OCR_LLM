@@ -1,0 +1,29 @@
+Document,Model,Ordered Similarity (%),Unordered Similarity (%),Jaccard Similarity (%)
+abbive CARE Enrollment confirmation,SuryaOCR,54.4,9.68,73.8
+abbive CARE Enrollment confirmation,TesseractOCR,40.88,8.89,57.35
+Ypeti TODAY Approval form,SuryaOCR,28.76,3.52,38.02
+Ypeti TODAY Approval form,TesseractOCR,18.96,5.62,33.53
+Western Appt Confirmation,SuryaOCR,40.73,21.32,60.87
+Western Appt Confirmation,TesseractOCR,31.76,18.14,58.55
+UHN Referral Form,SuryaOCR,38.21,11.86,58.4
+UHN Referral Form,TesseractOCR,18.68,9.91,40.63
+Sunnybrook Referral confirmation,TesseractOCR,56.93,14.7,64.2
+Sunnybrook Referral confirmation,SuryaOCR,56.54,15.1,71.3
+Private Office Appt Confirmation,TesseractOCR,53.46,6.77,61.76
+Private Office Appt Confirmation,SuryaOCR,50.23,10.47,76.88
+Pfizer FLEX appt reminder,SuryaOCR,51.59,13.3,57.95
+Pfizer FLEX appt reminder,TesseractOCR,41.56,11.04,43.56
+MSH Pathology Result 3 pgs,SuryaOCR,49.28,10.21,55.21
+MSH Pathology Result 3 pgs,TesseractOCR,19.12,4.02,44.78
+Limited Use Authorization Form,SuryaOCR,40.51,13.96,51.72
+Limited Use Authorization Form,TesseractOCR,32.55,7.85,37.45
+Humber RIver PATH result,SuryaOCR,35.82,8.17,56.34
+Humber RIver PATH result,TesseractOCR,30.17,5.16,51.88
+Dynacare Lab Result_001,TesseractOCR,49.04,11.44,53.73
+Dynacare Lab Result_001,SuryaOCR,47.06,12.74,67.37
+Dynacare Histolgy Report,TesseractOCR,50.25,18.77,52.49
+Dynacare Histolgy Report,SuryaOCR,49.21,23.78,64.54
+Dermatology DLQ1,SuryaOCR,48.98,5.3,59.53
+Dermatology DLQ1,TesseractOCR,35.87,2.81,49.32
+AJOVY Appt Reminder,SuryaOCR,50.56,23.58,62.79
+AJOVY Appt Reminder,TesseractOCR,38.87,18.68,53.15

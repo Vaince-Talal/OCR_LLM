@@ -1,9 +1,6 @@
 import os
 import requests
 from pdf2image import convert_from_path
-from hl7apy.core import Message, Segment
-from gpt4all import GPT4All
-import easyocr  # Using EasyOCR as the OCR tool
 from google.cloud import vision
 import io
 
@@ -22,15 +19,6 @@ def pdf_to_image(pdf_path, output_folder="images", poppler_path=r"C:\\poppler\\L
 
     return image_paths
 
-# Function to perform OCR on an image using EasyOCR
-def ocr_image_easyocr(image_path, output_file):
-    reader = easyocr.Reader(["en"], gpu=True)
-    result = reader.readtext(image_path, detail=0)  # Get text only
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("\n".join(result))
-
-    return "\n".join(result)
 
 # Function to perform OCR on an image using Google Vision API
 def ocr_image_google(image_path, output_file):
