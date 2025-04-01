@@ -1,10 +1,11 @@
 import os
 import time
 from OCR_Models.BaseOCR import BaseOCR
-from OCR_Models.DocTROCR import DocTROCR
-from OCR_Models.SuryaOCR import SuryaOCR
-from OCR_Models.TesseractOCRTool import TesseractOCR
-from OCR_Models.PaddleOCR import PaddleOCR
+# from OCR_Models.DocTROCR import DocTROCR
+# from OCR_Models.SuryaOCR import SuryaOCR
+# from OCR_Models.TesseractOCRTool import TesseractOCR
+# from OCR_Models.PaddleOCR import PaddleOCR
+from OCR_Models.EasyOCR import EasyOCR
 
 # Directory containing your PDF/Image files
 directory_path = r"fwwchloosereportfaxexamples"
@@ -15,10 +16,11 @@ if not os.path.exists(output_folder):
 
 # Instantiate your OCR models
 ocr_models = {
-    ' TesseractOCR': TesseractOCR(language="eng"),
-    #'SuryaOCR': SuryaOCR(language="en"),
+    # 'TesseractOCR': TesseractOCR(language="eng"),
+    # 'SuryaOCR': SuryaOCR(language="en"),
     # 'DocTROCR': DocTROCR(language="en"),
-    'PaddleOCR': PaddleOCR(language="en")
+    # 'PaddleOCR': PaddleOCR(language="en")
+    'EasyOCR': EasyOCR(language="en")
 }
 
 summary_file = os.path.join(output_folder, "OCR_summary.txt")
@@ -45,7 +47,7 @@ with open(summary_file, "w", encoding="utf-8") as summary:
                 with open(text_file, "w", encoding="utf-8") as f:
                     f.write(text_output)
                 print(f"{model_name} results saved for {file}")
-
+         
                 # Save OCR text with confidence
                 conf_file = os.path.join(output_folder, f"{base_filename}_{model_name}_OCR_with_conf.txt")
                 confidences = []
