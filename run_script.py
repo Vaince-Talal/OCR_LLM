@@ -4,6 +4,7 @@ from OCR_Models.BaseOCR import BaseOCR
 from OCR_Models.DocTROCR import DocTROCR
 from OCR_Models.SuryaOCR import SuryaOCR
 from OCR_Models.TesseractOCRTool import TesseractOCR
+from OCR_Models.PaddleOCR import PaddleOCR
 
 # Directory containing your PDF/Image files
 directory_path = r"fwwchloosereportfaxexamples"
@@ -14,9 +15,10 @@ if not os.path.exists(output_folder):
 
 # Instantiate your OCR models
 ocr_models = {
-    #' TesseractOCR': TesseractOCR(language="eng"),
+    ' TesseractOCR': TesseractOCR(language="eng"),
     #'SuryaOCR': SuryaOCR(language="en"),
-    'DocTROCR': DocTROCR(language="en")
+    # 'DocTROCR': DocTROCR(language="en"),
+    'PaddleOCR': PaddleOCR(language="en")
 }
 
 summary_file = os.path.join(output_folder, "OCR_summary.txt")
