@@ -2,9 +2,9 @@ import os
 import time
 from OCR_Models.BaseOCR import BaseOCR
 # from OCR_Models.DocTROCR import DocTROCR
-# from OCR_Models.SuryaOCR import SuryaOCR
-# from OCR_Models.TesseractOCRTool import TesseractOCR
-# from OCR_Models.PaddleOCR import PaddleOCR
+from OCR_Models.SuryaOCR import SuryaOCR
+from OCR_Models.TesseractOCRTool import TesseractOCR
+#from OCR_Models.PaddleOCR import PaddleOCR
 from OCR_Models.EasyOCR import EasyOCR
 
 # Directory containing your PDF/Image files
@@ -16,8 +16,8 @@ if not os.path.exists(output_folder):
 
 # Instantiate your OCR models
 ocr_models = {
-    # 'TesseractOCR': TesseractOCR(language="eng"),
-    # 'SuryaOCR': SuryaOCR(language="en"),
+     'TesseractOCR': TesseractOCR(language="eng"),
+     'SuryaOCR': SuryaOCR(language="en"),
     # 'DocTROCR': DocTROCR(language="en"),
     # 'PaddleOCR': PaddleOCR(language="en")
     'EasyOCR': EasyOCR(language="en")
