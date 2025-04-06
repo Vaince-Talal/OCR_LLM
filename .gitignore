@@ -1,4 +1,6 @@
 /images/
+/fwwchloosereportfaxexamples/
+/ground_truth/
 __pycache__/
 *.pyc
 *.pyo

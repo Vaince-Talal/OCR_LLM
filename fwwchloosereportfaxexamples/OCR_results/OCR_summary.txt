@@ -21,7 +21,7 @@ Limited Use Authorization Form.pdf,TesseractOCR,4.84,70.53
 Limited Use Authorization Form.pdf,SuryaOCR,257.20,84.21
 Limited Use Authorization Form.pdf,EasyOCR,53.80,36.25
 MSH Pathology Result 3 pgs.pdf,TesseractOCR,8.98,74.07
-MSH Pathology Result 3 pgs.pdf,SuryaOCR,39345.40,83.39
+MSH Pathology Result 3 pgs.pdf,SuryaOCR,393.40,83.39
 MSH Pathology Result 3 pgs.pdf,EasyOCR,137.79,37.98
 Pfizer FLEX appt reminder.pdf,TesseractOCR,2.95,72.99
 Pfizer FLEX appt reminder.pdf,SuryaOCR,171.44,81.84
