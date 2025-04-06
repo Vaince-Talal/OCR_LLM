@@ -1,5 +1,5 @@
 /images/
-/fwwchloosereportfaxexamples/
+/fwwchloosereportfaxexamples/*
 /ground_truth/
 __pycache__/
 *.pyc
@@ -8,3 +8,4 @@ __pycache__/
 *.pyw
 *.pyz
 
+/images/
