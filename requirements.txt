@@ -1,0 +1,13 @@
+numpy
+pandas
+opencv-python
+pytesseract
+torch
+transformers
+scikit-learn
+matplotlib
+easyocr
+surya-ocr
+paddlepaddle
+paddleocr
+
